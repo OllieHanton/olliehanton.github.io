@@ -1,0 +1,90 @@
+---
+layout: default
+title: Physical Computing at Bath
+---
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Members</title>
+  <style>
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .team-member {
+      flex: 1 1 calc(16% - 20px); /* 6 per row */
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      max-width: 200px;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .team-member h4 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+    }
+
+    .team-member p {
+      font-size: 0.9em;
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      .team-member {
+        flex: 1 1 calc(33% - 20px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .team-member {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="/assets/images/member1.jpg" alt="Member 1">
+      <h4>Dr. Alice Smith</h4>
+      <p><a href="https://github.com/alicesmith">GitHub</a></p>
+    </div>
+    <div class="team-member">
+      <img src="/assets/images/member2.jpg" alt="Member 2">
+      <h4>John Doe</h4>
+      <p><a href="https://example.com/john">Website</a></p>
+    </div>
+    <div class="team-member">
+      <img src="/assets/images/member3.jpg" alt="Member 3">
+      <h4>Jane Lee</h4>
+      <p><a href="https://github.com/janelee">GitHub</a></p>
+    </div>
+    <div class="team-member">
+      <img src="/assets/images/member4.jpg" alt="Member 4">
+      <h4>Tom Wright</h4>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="team-member">
+      <img src="/assets/images/member5.jpg" alt="Member 5">
+      <h4>Maria Chen</h4>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="team-member">
+      <img src="/assets/images/member6.jpg" alt="Member 6">
+      <h4>Ravi Kumar</h4>
+      <p><a href="#">Link</a></p>
+    </div>
+  </div>
+</body>
+</html>
