@@ -1,27 +1,37 @@
----
-layout: default
-title: Physical Computing at Bath
----
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Lab Members</title>
   <style>
-    .team-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
+    body {
+      font-family: sans-serif;
+      margin: 0;
       padding: 20px;
     }
 
+    .section-title {
+      font-size: 1.5em;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
     .team-member {
-      flex: 1 1 calc(16% - 20px); /* 6 per row */
+      flex: 1 1 180px;
+      max-width: 200px;
       text-align: center;
       border: 1px solid #ddd;
       border-radius: 10px;
       padding: 10px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-      max-width: 200px;
+      background: #fff;
     }
 
     .team-member img {
@@ -40,13 +50,13 @@ title: Physical Computing at Bath
       margin: 0;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
       .team-member {
-        flex: 1 1 calc(33% - 20px);
+        flex: 1 1 45%;
       }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 480px) {
       .team-member {
         flex: 1 1 100%;
       }
@@ -54,37 +64,49 @@ title: Physical Computing at Bath
   </style>
 </head>
 <body>
+
+  <h2 class="section-title">PhD Students</h2>
   <div class="team-container">
     <div class="team-member">
-      <img src="/assets/images/member1.jpg" alt="Member 1">
+      <img src="/assets/images/member1.jpg" alt="Alice">
       <h4>Dr. Alice Smith</h4>
       <p><a href="https://github.com/alicesmith">GitHub</a></p>
     </div>
     <div class="team-member">
-      <img src="/assets/images/member2.jpg" alt="Member 2">
+      <img src="/assets/images/member2.jpg" alt="John">
       <h4>John Doe</h4>
       <p><a href="https://example.com/john">Website</a></p>
     </div>
     <div class="team-member">
-      <img src="/assets/images/member3.jpg" alt="Member 3">
+      <img src="/assets/images/member3.jpg" alt="Jane">
       <h4>Jane Lee</h4>
       <p><a href="https://github.com/janelee">GitHub</a></p>
     </div>
     <div class="team-member">
-      <img src="/assets/images/member4.jpg" alt="Member 4">
+      <img src="/assets/images/member4.jpg" alt="Tom">
       <h4>Tom Wright</h4>
       <p><a href="#">Link</a></p>
     </div>
     <div class="team-member">
-      <img src="/assets/images/member5.jpg" alt="Member 5">
+      <img src="/assets/images/member5.jpg" alt="Maria">
       <h4>Maria Chen</h4>
       <p><a href="#">Link</a></p>
     </div>
     <div class="team-member">
-      <img src="/assets/images/member6.jpg" alt="Member 6">
+      <img src="/assets/images/member6.jpg" alt="Ravi">
       <h4>Ravi Kumar</h4>
       <p><a href="#">Link</a></p>
     </div>
   </div>
+
+  <h2 class="section-title">Post-Doctoral Researchers</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="/assets/images/postdoc1.jpg" alt="Laura">
+      <h4>Laura Nguyen</h4>
+      <p><a href="#">Profile</a></p>
+    </div>
+  </div>
+
 </body>
 </html>
